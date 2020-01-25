@@ -184,5 +184,48 @@ namespace RegistroPersona
         {
             Limpiar();
         }
+
+        private void TextBoxnombre_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBoxnombre_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            int ascci = Convert.ToInt32(Convert.ToChar(e.Text));
+
+            if (ascci >= 65 && ascci <= 90 || ascci >= 97 && ascci <= 122)
+
+                e.Handled = false;
+
+            else e.Handled = true;
+        }
+
+        private void TextBoxid_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            int ascci = Convert.ToInt32(Convert.ToChar(e.Text));
+
+            if (ascci >= 48 && ascci <= 57) e.Handled = false;
+
+            else e.Handled = true;
+        }
+
+        private void TextBoxtelefono_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            int ascci = Convert.ToInt32(Convert.ToChar(e.Text));
+
+            if (ascci >= 48 && ascci <= 57) e.Handled = false;
+
+            else e.Handled = true;
+        }
+
+        private void TextBoxcedula_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            int ascci = Convert.ToInt32(Convert.ToChar(e.Text));
+
+            if (ascci >= 48 && ascci <= 57) e.Handled = false;
+
+            else e.Handled = true;
+        }
     }
 }

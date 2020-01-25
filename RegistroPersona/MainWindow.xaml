@@ -13,10 +13,10 @@
         <Label Content="Cédula" HorizontalAlignment="Left" Margin="17,164,0,0" VerticalAlignment="Top" Height="32" Width="67" FontWeight="Bold"/>
         <Label Content="Dirección" HorizontalAlignment="Left" Margin="17,195,0,0" VerticalAlignment="Top" Height="32" Width="67" FontWeight="Bold"/>
         <Label Content="Fecha Nacimiento" HorizontalAlignment="Left" Margin="15,227,0,0" VerticalAlignment="Top" Height="32" Width="116" FontWeight="Bold"/>
-        <TextBox x:Name="TextBoxid" HorizontalAlignment="Left" Margin="54,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
-        <TextBox x:Name="TextBoxnombre" HorizontalAlignment="Left" Margin="133,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228"/>
-        <TextBox x:Name="TextBoxtelefono" HorizontalAlignment="Left" Margin="133,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228"/>
-        <TextBox x:Name="TextBoxcedula" HorizontalAlignment="Left" Margin="133,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226"/>
+        <TextBox x:Name="TextBoxid" HorizontalAlignment="Left" Margin="54,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" PreviewTextInput="TextBoxid_PreviewTextInput"/>
+        <TextBox x:Name="TextBoxnombre" HorizontalAlignment="Left" Margin="133,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" TextChanged="TextBoxnombre_TextChanged" PreviewTextInput="TextBoxnombre_PreviewTextInput"/>
+        <TextBox x:Name="TextBoxtelefono" HorizontalAlignment="Left" Margin="133,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" PreviewTextInput="TextBoxtelefono_PreviewTextInput"/>
+        <TextBox x:Name="TextBoxcedula" HorizontalAlignment="Left" Margin="133,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" PreviewTextInput="TextBoxcedula_PreviewTextInput"/>
         <TextBox x:Name="TextBoxdireccion" HorizontalAlignment="Left" Margin="133,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"/>
         <DatePicker x:Name="DatePickerfechanacimiento" HorizontalAlignment="Left" Margin="133,228,0,0" VerticalAlignment="Top" Width="225"/>
         <Button x:Name="Buttonnuevo" Content="   Nuevo" HorizontalAlignment="Left" Margin="22,294,0,0" VerticalAlignment="Top" Height="51" Width="100" Click="Buttonnuevo_Click" Foreground="Black" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}" FontWeight="Bold" FontSize="14" Visibility="Visible">
