@@ -89,17 +89,40 @@ namespace RegistroPersona
             }
             paso = false;
 
+            if (TextBoxtelefono.Text == string.Empty)
+            {
+                MessageBox.Show("Este campo es oligatorio");
+            }
+            paso = false;
+
+            if (TextBoxcedula.Text == string.Empty)
+            {
+                MessageBox.Show("Este campo es oligatorio");
+            }
+            paso = false;
+
+            if (TextBoxdireccion.Text == string.Empty)
+            {
+                MessageBox.Show("Este campo es oligatorio");
+            }
+            paso = false;
+
+
+
+
             return paso;
 
         }
 
         private void Buttonguardar_Click(object sender, RoutedEventArgs e)
         {
-            Persona persona=new Persona();
+            Persona persona =new Persona();
             bool paso = false;
 
-           // if (!Validar())
-             //   return;
+          //   if (!Validar())
+            //  return;
+
+           persona = LlenaClase();
 
             if (Convert.ToInt32(TextBoxid.Text) == 0)
                 paso = PersonaBLL.Guardar(persona);
@@ -115,8 +138,9 @@ namespace RegistroPersona
 
             if (paso)
             {
-                Limpiar();
+                //Limpiar();
                 MessageBox.Show("Se ah Guardado");
+                Limpiar();
 
             }
             else
@@ -130,7 +154,7 @@ namespace RegistroPersona
 
             int.TryParse(TextBoxid.Text, out id);
 
-            Limpiar();
+            //Limpiar();
 
             persona = PersonaBLL.Buscar(id);
 
