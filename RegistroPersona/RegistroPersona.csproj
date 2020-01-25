@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icons8-eliminar-24.png" />
+    <None Remove="icons8-encuentra-hombre-usuario-26.png" />
+    <None Remove="icons8-google-web-search-24.png" />
+    <None Remove="icons8-guardar-26.png" />
+    <None Remove="icons8-guardar-30.png" />
+    <None Remove="icons8-nuevo-32.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icons8-eliminar-24.png" />
+    <Resource Include="icons8-encuentra-hombre-usuario-26.png" />
+    <Resource Include="icons8-google-web-search-24.png" />
+    <Resource Include="icons8-guardar-26.png" />
+    <Resource Include="icons8-guardar-30.png" />
+    <Resource Include="icons8-nuevo-32.png" />
+  </ItemGroup>
+
+</Project>
